@@ -9,11 +9,10 @@ const connection = mysql.createConnection({
     database: "burgers_db"
 });
 
-connection.connect(function (error) {
+connection.connect((error) => {
     if (error) {
         throw error;
     }
-
     console.log(`Connected to database as id ${connection.threadId}`);
 });
 

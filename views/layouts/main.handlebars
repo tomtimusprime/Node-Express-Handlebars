@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <title>Eat-Da-Burger</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/burger_style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/burgerjquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center"> Eat-Da-Burger</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img class="rounded mx-auto d-block burger-img" src="./assets/img/burger.png">
+                </div>
+            </div>
+        </div>
+
+        {{{ body }}}
+
+        <div class="row">
+            <div class="col-12">
+                <form id="burgerform">
+                    <div class="form-group">
+                        <label for="inputBurger">Add-a-Burger</label>
+                        <input type="text" class="form-control" id="inputBurger" aria-describedby="inputBurger"
+                            placeholder="Enter Burger Type">
+                    </div>
+                    <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
