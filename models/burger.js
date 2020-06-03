@@ -20,7 +20,7 @@ const burger = {
     return result;
   },
   delete: async (condition) => {
-    const result = await orm.delete("burgers", condition);
+    const result = await orm.update("burgers", condition);
 
     return result;
   }
